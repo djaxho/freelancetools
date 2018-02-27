@@ -1,0 +1,68 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Hind')
+    link(rel='stylesheet', href='/css/vendor/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .hero
+      nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top.navbar-transparent
+        .container.d-flex.justify-content-between
+          a.navbar-brand(href="/")
+            img.d-inline-block.align-top(src="/images/logos/toolkit.png" width="40" height="40")
+            span(style="line-height:40px")  freelance tools
+
+          button.navbar-toggler
+            span.navbar-toggler-icon
+
+          .collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+              li.nav-item.active
+                a.nav-link(href="#") Home
+              li.nav-item
+                a.nav-link(href="#") Info
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Tools
+                .dropdown-menu(aria-labelledby="dropdown01")
+                  a.dropdown-item Invoice Generator
+                  a.dropdown-item Quote Generator
+                  a.dropdown-item.disabled More to come...
+              li.nav-item
+                a.nav-link(href="#") Contact
+
+            form.form-inline.my-2.my-sm-0
+              button.btn.btn-sm.btn-default.my-2.my-sm-0 Sign Up
+              button.btn.btn-sm.btn-info.my-2.my-sm-0 Log in
+      .container
+        .row
+          .col-sm-6
+            .jumbotron
+              h1 A <strong>tool</strong>box for freelancers
+              hr.my-1
+              p.slogan Spend more time <del>relaxing</del> being productive.
+              p.lead
+                a.btn.btn-primary.btn-sm.main-cta-btn(href="#") Learn more
+          .col-sm-6
+            .carousel-container
+              .carousel.slide(id="carouselExampleIndicators" data-ride="carousel")
+                ol.carousel-indicators
+                  li.active(data-target="#carouselExampleIndicators" data-slide-to="0")
+                  li.active(data-target="#carouselExampleIndicators" data-slide-to="1")
+                  li.active(data-target="#carouselExampleIndicators" data-slide-to="2")
+                .carousel-inner
+                  .carousel-item.active
+                    img.d-block.w-100(src="/images/icons/invoice.png")
+                  .carousel-item
+                    img.d-block.w-100(src="/images/icons/books.png")
+                  .carousel-item
+                    img.d-block.w-100(src="/images/icons/invoice.svg")
+    div(style="height:1000px")
+    
+    block content
+ 
+    
+    script(src='/js/vendor/jquery.min.js')
+    script(src='/js/vendor/bootstrap.min.js')
+    script(src='/javascripts/landing.js')

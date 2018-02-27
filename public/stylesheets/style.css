@@ -1,0 +1,52 @@
+body {
+  font-family: "Hind" !important; }
+
+.navbar .navbar-brand {
+  margin-right: 50px; }
+
+.navbar .nav-link {
+  margin-right: 30px; }
+
+.navbar button {
+  margin-right: 10px; }
+
+.hero {
+  background-image: linear-gradient(290deg, #5F85B6, #294470);
+  color: white;
+  height: 500px; }
+
+.jumbotron {
+  background: none;
+  margin-top: 8em;
+  height: 350px; }
+
+p.slogan {
+  font-size: 1.15em; }
+
+.carousel-container {
+  margin-top: 5em; }
+
+.carousel {
+  height: 360px; }
+
+.carousel-inner {
+  /*   padding-top:60px; */ }
+
+.carousel-item img {
+  width: 200px !important;
+  margin: 40px auto 0 auto; }
+
+.navbar-transparent {
+  background: transparent !important;
+  /*   position: fixed; */ }
+
+.navbar {
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s; }
+
+.main-cta-btn {
+  background: #5f85b6;
+  border: none; }
+
+/*# sourceMappingURL=style.css.map */
